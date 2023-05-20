@@ -1,6 +1,6 @@
-import toArray from "./toArray.js";
-import toPropertyKey from "./toPropertyKey.js";
-export default function _decorate(decorators, factory, superClass, mixins) {
+var toArray = require("./toArray.js");
+var toPropertyKey = require("./toPropertyKey.js");
+function _decorate(decorators, factory, superClass, mixins) {
   var api = _getDecoratorsApi();
   if (mixins) {
     for (var i = 0; i < mixins.length; i++) {
@@ -340,3 +340,4 @@ function _optionalCallableProperty(obj, name) {
   }
   return value;
 }
+module.exports = _decorate, module.exports.__esModule = true, module.exports["default"] = module.exports;

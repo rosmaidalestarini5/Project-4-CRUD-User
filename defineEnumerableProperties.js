@@ -1,4 +1,4 @@
-export default function _defineEnumerableProperties(obj, descs) {
+function _defineEnumerableProperties(obj, descs) {
   for (var key in descs) {
     var desc = descs[key];
     desc.configurable = desc.enumerable = true;
@@ -17,3 +17,4 @@ export default function _defineEnumerableProperties(obj, descs) {
   }
   return obj;
 }
+module.exports = _defineEnumerableProperties, module.exports.__esModule = true, module.exports["default"] = module.exports;

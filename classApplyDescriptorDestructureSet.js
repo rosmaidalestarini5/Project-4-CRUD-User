@@ -1,4 +1,4 @@
-export default function _classApplyDescriptorDestructureSet(receiver, descriptor) {
+function _classApplyDescriptorDestructureSet(receiver, descriptor) {
   if (descriptor.set) {
     if (!("__destrObj" in descriptor)) {
       descriptor.__destrObj = {
@@ -15,3 +15,4 @@ export default function _classApplyDescriptorDestructureSet(receiver, descriptor
     return descriptor;
   }
 }
+module.exports = _classApplyDescriptorDestructureSet, module.exports.__esModule = true, module.exports["default"] = module.exports;

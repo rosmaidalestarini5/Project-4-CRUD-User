@@ -1,4 +1,4 @@
-import _typeof from "./typeof.js";
+var _typeof = require("./typeof.js")["default"];
 function _getRequireWildcardCache(nodeInterop) {
   if (typeof WeakMap !== "function") return null;
   var cacheBabelInterop = new WeakMap();
@@ -7,7 +7,7 @@ function _getRequireWildcardCache(nodeInterop) {
     return nodeInterop ? cacheNodeInterop : cacheBabelInterop;
   })(nodeInterop);
 }
-export default function _interopRequireWildcard(obj, nodeInterop) {
+function _interopRequireWildcard(obj, nodeInterop) {
   if (!nodeInterop && obj && obj.__esModule) {
     return obj;
   }
@@ -38,3 +38,4 @@ export default function _interopRequireWildcard(obj, nodeInterop) {
   }
   return newObj;
 }
+module.exports = _interopRequireWildcard, module.exports.__esModule = true, module.exports["default"] = module.exports;

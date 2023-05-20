@@ -1,4 +1,4 @@
-import defineProperty from "./defineProperty.js";
+var defineProperty = require("./defineProperty.js");
 function ownKeys(object, enumerableOnly) {
   var keys = Object.keys(object);
   if (Object.getOwnPropertySymbols) {
@@ -9,7 +9,7 @@ function ownKeys(object, enumerableOnly) {
   }
   return keys;
 }
-export default function _objectSpread2(target) {
+function _objectSpread2(target) {
   for (var i = 1; i < arguments.length; i++) {
     var source = null != arguments[i] ? arguments[i] : {};
     i % 2 ? ownKeys(Object(source), !0).forEach(function (key) {
@@ -20,3 +20,4 @@ export default function _objectSpread2(target) {
   }
   return target;
 }
+module.exports = _objectSpread2, module.exports.__esModule = true, module.exports["default"] = module.exports;

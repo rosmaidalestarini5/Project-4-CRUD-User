@@ -1,4 +1,4 @@
-import _typeof from "./typeof.js";
+var _typeof = require("./typeof.js")["default"];
 function old_createMetadataMethodsForProperty(metadataMap, kind, property, decoratorFinishedRef) {
   return {
     getMetadata: function getMetadata(key) {
@@ -227,9 +227,10 @@ function old_applyClassDecs(ret, targetClass, metadataMap, classDecs) {
     });
   }
 }
-export default function applyDecs(targetClass, memberDecs, classDecs) {
+function applyDecs(targetClass, memberDecs, classDecs) {
   var ret = [],
     staticMetadataMap = {},
     protoMetadataMap = {};
   return old_applyMemberDecs(ret, targetClass, protoMetadataMap, staticMetadataMap, memberDecs), old_convertMetadataMapToFinal(targetClass.prototype, protoMetadataMap), old_applyClassDecs(ret, targetClass, staticMetadataMap, classDecs), old_convertMetadataMapToFinal(targetClass, staticMetadataMap), ret;
 }
+module.exports = applyDecs, module.exports.__esModule = true, module.exports["default"] = module.exports;

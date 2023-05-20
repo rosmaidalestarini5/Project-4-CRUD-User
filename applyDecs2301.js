@@ -1,5 +1,5 @@
-import _typeof from "./typeof.js";
-import checkInRHS from "./checkInRHS.js";
+var _typeof = require("./typeof.js")["default"];
+var checkInRHS = require("./checkInRHS.js");
 function createAddInitializerMethod(initializers, decoratorFinishedRef) {
   return function (initializer) {
     assertNotFinished(decoratorFinishedRef, "addInitializer"), assertCallable(initializer, "An initializer"), initializers.push(initializer);
@@ -210,7 +210,7 @@ function applyClassDecs(targetClass, classDecs) {
     }];
   }
 }
-export default function applyDecs2301(targetClass, memberDecs, classDecs, instanceBrand) {
+function applyDecs2301(targetClass, memberDecs, classDecs, instanceBrand) {
   return {
     e: applyMemberDecs(targetClass, memberDecs, instanceBrand),
     get c() {
@@ -218,3 +218,4 @@ export default function applyDecs2301(targetClass, memberDecs, classDecs, instan
     }
   };
 }
+module.exports = applyDecs2301, module.exports.__esModule = true, module.exports["default"] = module.exports;
